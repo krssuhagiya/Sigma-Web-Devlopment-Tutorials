@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - selectors</title>
+    <style>
+        /* Element selector */
+        main {
+            background-color: #141010;
+            color: #f70776;
+        }
+        /* Class Selector */
+        .red{
+            background-color: #dad7cd;
+            color: #344e41;
+        }
+        /* id selectors */
+        #green{
+            background-color: #344e41;
+            color: #a3b18a;
+        }
+        /* child selectors */
+        div > p {
+            background-color: #47ebb2;
+        }
+        /* Descendant Selector */
+        div  p {
+            color: #ffffff;
+        }
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo selecotr */
+        a:visited {
+            color: rgb(0, 255, 98);
+        }
+        a:link {
+            color: #344e41;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        Element selector
+    </main>
+    <div class="red">
+        I am div
+        <p> (Descendant Selector) (Chilld selectors) </p>
+        <article>
+            <p>(Descendant Selector)</p>
+        </article>
+    </div>
+    <div id="green">
+        (Id selector)
+    </div>
+
+    <div>
+        <a href="https://www.google.com">Google</a>
+    </div>
+    <div>
+        <a href="https://www.youtube.com">Youtube</a>
+    </div>
+</body>
+</html>
