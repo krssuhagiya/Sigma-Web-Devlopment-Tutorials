@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Multi Color Website</title>
+    <style>
+        :root{
+            --primary-color : hwb(0 30% 64%);
+            --tex-tcolor : aliceblue;
+            --secondary-color : rgb(204, 113, 133);
+        }
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-color: var(--primary-color);
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: 600;
+            color: var(--tex-tcolor);
+        }
+        nav{
+            background-color: var(--secondary-color);
+            padding: 12px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Countact Us</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
