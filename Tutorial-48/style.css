@@ -1,0 +1,39 @@
+*{
+    padding: 0;margin: 0;
+}
+
+.container {
+    background-color: #d3a0a0;
+    height: 80vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    position: relative;
+}
+.ball{
+    background-color: #5e3838;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all;
+    animation: animationx 10s linear infinite, animationy 1s ease-out infinite alternate ;
+}   
+@keyframes animationx {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes animationy {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
