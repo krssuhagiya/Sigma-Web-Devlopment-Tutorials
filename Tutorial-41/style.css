@@ -1,0 +1,40 @@
+*{
+    margin: 0;padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 120px;
+    
+}
+.logo img {
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.right ul li{
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.right ul {
+    display: flex;
+    gap: 20px;
+}
